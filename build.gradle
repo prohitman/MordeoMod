@@ -140,6 +140,16 @@ repositories {
             includeGroup("com.eliotlash.mclib")
         }
     }
+
+    maven { url = 'https://maven.maxhenkel.de/repository/public' }
+
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
     // flatDir {
@@ -156,6 +166,12 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.7')
+
+    implementation("com.eliotlash.mclib:mclib:20")
+
+    implementation "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
+
+    runtimeOnly fg.deobf("maven.modrinth:simple-voice-chat:forge-1.20.1-${voicechat_dependency}")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
