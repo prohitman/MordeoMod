@@ -1,0 +1,32 @@
+{
+  "mordeo_angry": {
+    "subtitles": "sounds.mordeomod.mordeo_angry",
+    "sounds": [
+      "mordeomod:mordeo_angry"
+    ]
+  },
+  "mordeo_attack": {
+    "subtitles": "sounds.mordeomod.mordeo_attack",
+    "sounds": [
+      "mordeomod:mordeo_attack"
+    ]
+  },
+  "mordeo_idle": {
+    "subtitles": "sounds.mordeomod.mordeo_idle",
+    "sounds": [
+      "mordeomod:mordeo_idle"
+    ]
+  },
+  "mordeo_run": {
+    "subtitles": "sounds.mordeomod.mordeo_run",
+    "sounds": [
+      "mordeomod:mordeo_run"
+    ]
+  },
+  "mordeo_walk": {
+    "subtitles": "sounds.mordeomod.mordeo_walk",
+    "sounds": [
+      "mordeomod:mordeo_walk"
+    ]
+  }
+}

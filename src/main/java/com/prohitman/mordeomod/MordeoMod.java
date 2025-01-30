@@ -1,6 +1,10 @@
 package com.prohitman.mordeomod;
 
 import com.mojang.logging.LogUtils;
+import com.prohitman.mordeomod.init.ModBlocks;
+import com.prohitman.mordeomod.init.ModEntities;
+import com.prohitman.mordeomod.init.ModItems;
+import com.prohitman.mordeomod.init.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -41,6 +45,11 @@ public class MordeoMod
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
+        ModSounds.SOUND_EVENTS.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -52,7 +61,9 @@ public class MordeoMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS){
+            event.accept(ModItems.MORDEO_SPAWN_EGG);
+        }
     }
 
     @SubscribeEvent
