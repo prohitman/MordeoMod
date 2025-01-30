@@ -12,6 +12,6 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MordeoMod.MODID);
 
     public static final RegistryObject<EntityType<MordeoEntity>> MORDEO = ENTITY_TYPES.register("mordeo",
-            () -> EntityType.Builder.of(MordeoEntity::new, MobCategory.MONSTER).sized(1F, 2F).clientTrackingRange(20).build("mordeo"));
+            () -> EntityType.Builder.of(MordeoEntity::new, MobCategory.MONSTER).sized(1.5F, 3F).clientTrackingRange(20).build("mordeo"));
 
 }

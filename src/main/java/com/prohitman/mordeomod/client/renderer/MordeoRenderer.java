@@ -9,5 +9,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class MordeoRenderer extends GeoEntityRenderer<MordeoEntity> {
     public MordeoRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new MordeoModel());
+        this.withScale(0.5f);
+        this.shadowRadius = 1;
     }
 }

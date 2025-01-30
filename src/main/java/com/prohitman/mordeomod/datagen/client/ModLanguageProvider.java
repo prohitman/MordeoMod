@@ -1,6 +1,7 @@
 package com.prohitman.mordeomod.datagen.client;
 
 import com.prohitman.mordeomod.MordeoMod;
+import com.prohitman.mordeomod.init.ModEntities;
 import com.prohitman.mordeomod.init.ModItems;
 import com.prohitman.mordeomod.init.ModSounds;
 import net.minecraft.data.PackOutput;
@@ -26,6 +27,8 @@ public class ModLanguageProvider extends LanguageProvider {
         addSound(ModSounds.MORDEO_IDLE);
         addSound(ModSounds.MORDEO_RUN);
         addSound(ModSounds.MORDEO_WALK);
+
+        addEntityType(ModEntities.MORDEO, "Mordeo");
     }
 
     public void addAdvTitle(String name, String translation){

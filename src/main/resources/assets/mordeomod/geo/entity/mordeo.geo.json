@@ -133,7 +133,7 @@
 					]
 				},
 				{
-					"name": "Neck2",
+					"name": "head",
 					"parent": "Chest",
 					"pivot": [0, 115, 6.8],
 					"rotation": [-55, 0, 0],
@@ -144,7 +144,7 @@
 				},
 				{
 					"name": "Neck1",
-					"parent": "Neck2",
+					"parent": "head",
 					"pivot": [0, 115, -1],
 					"rotation": [40, 0, 0],
 					"cubes": [
@@ -153,7 +153,7 @@
 					]
 				},
 				{
-					"name": "Head",
+					"name": "Neckless",
 					"parent": "Neck1",
 					"pivot": [0, 117.2, -10.2],
 					"rotation": [15, 0, 0],
@@ -202,7 +202,7 @@
 				},
 				{
 					"name": "AntlerLeft",
-					"parent": "Head",
+					"parent": "Neckless",
 					"pivot": [5.875, 120.6075, -11.2575],
 					"rotation": [0, 0, 15],
 					"cubes": [
@@ -223,7 +223,7 @@
 				},
 				{
 					"name": "AntlerRight",
-					"parent": "Head",
+					"parent": "Neckless",
 					"pivot": [-5.875, 120.6075, -11.2575],
 					"rotation": [0, 0, -15],
 					"cubes": [
@@ -244,7 +244,7 @@
 				},
 				{
 					"name": "Jaw",
-					"parent": "Head",
+					"parent": "Neckless",
 					"pivot": [0, 114.615, -10.7875],
 					"rotation": [22.5, 0, 0],
 					"cubes": [
